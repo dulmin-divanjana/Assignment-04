@@ -15,7 +15,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .road {
             height: 200px;
             width: 500%;
@@ -34,9 +33,7 @@
             100% {
                 transform: translate(-3400px);
             }
-
         }
-
         .city {
             height: 250px;
             width: 500%;
@@ -55,9 +52,7 @@
             100% {
                 transform: translate(-1400px);
             }
-
         }
-
         .car {
             width: 400px;
             left: 50%;
@@ -66,7 +61,6 @@
             position: absolute;
             z-index: 2;
         }
-
         .car img {
             width: 100%;
             animation: car 1s linear infinite;
@@ -83,7 +77,6 @@
                 transform: translate(-1px);
             }
         }
-
         .wheel{
             left: 50%;
             bottom: 178px;
@@ -94,7 +87,20 @@
         .wheel img{
             width: 72px;
             height: 72px;
-
+            animation: wheel 1s linear infinite;
+        }
+        .back{
+            left: -165px;
+            position: absolute;
+        }
+        .front{
+            left: 80px;
+            position: absolute;
+        }
+        @keyframes wheel {
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
     </style>
